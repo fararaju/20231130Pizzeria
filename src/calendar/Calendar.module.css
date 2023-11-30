@@ -1,0 +1,23 @@
+/*https://web.dev/learn/css/conclusion?hl=es-419*/
+/*https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag*/
+/*https://create-react-app.dev/docs/adding-a-css-modules-stylesheet*/
+
+.calendar{
+    /*https://css-tricks.com/snippets/css/complete-guide-grid/*/
+    display: grid;
+    grid-template-columns: repeat(7,1.5rem);
+    gap:0.5rem;
+    cursor:pointer;
+    user-select: none; 
+}
+.day{
+    /*https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.day:hover{
+    outline: 1px solid blue;
+}
